@@ -1,5 +1,220 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+#header {
+  background: black !important;
+  font-family: "Montserrat", sans-serif !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+#header #logo .image.avatar {
+  width: 48px !important;
+  height: 48px !important;
+}
+#header #logo .image.avatar img {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+}
+#header #logo h1 {
+  font-size: 1.5em !important;
+  text-align: left !important;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+#header #logo p {
+  font-size: 0.8em !important;
+  text-align: left !important;
+  color: rgb(173, 173, 173) !important;
+  font-weight: 600;
+}
+#header #nav ul li a {
+  font-weight: 600;
+  color: white !important;
+}
+#header #nav ul li a span:before {
+  color: white !important;
+}
+#header #nav ul li a.active {
+  color: #e27689 !important;
+}
+#header #nav ul li a.active span:before {
+  color: #e27689 !important;
+}
+#main section#top {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+#main section#top h2, #main section#top strong {
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.02em;
+}
+#main section#top p {
+  font-weight: 500;
+  color: white;
+}
+#main section#top .button {
+  background-color: white;
+  color: black !important;
+  font-weight: 500;
+}
+
+#main section#portfolio {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+#main section#portfolio h2, #main section#portfolio strong {
+  font-weight: 700;
+  color: black;
+  letter-spacing: -0.02em;
+}
+#main section#portfolio p {
+  font-weight: 500;
+  color: black;
+}
+
+.stacked-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.stacked-cards .item {
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.stacked-cards .item .image.fit {
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+.stacked-cards .item .image.fit img {
+  transition: transform 0.3s ease;
+}
+.stacked-cards .item .image.fit:hover img {
+  transform: scale(1.05);
+}
+.stacked-cards .item header {
+  padding: 1.5em;
+  text-align: center;
+}
+.stacked-cards .item .project-card-header {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: black;
+  letter-spacing: -0.02em;
+}
+.stacked-cards .item .project-card-description {
+  font-weight: 500;
+  color: black;
+}
+
+#main section#about {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+#main section#about h2, #main section#about strong {
+  font-weight: 700;
+  color: black;
+  letter-spacing: -0.02em;
+}
+#main section#about .image.featured {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+#main section#about p {
+  font-weight: 500;
+  color: black;
+}
+
+#main section#contact {
+  font-family: "Montserrat", sans-serif;
+}
+#main section#contact h2, #main section#contact strong {
+  text-align: left;
+  font-weight: 700;
+  color: black;
+  letter-spacing: -0.02em;
+}
+#main section#contact p {
+  text-align: left;
+  font-weight: 500;
+  color: black;
+}
+#main section#contact input[type=text],
+#main section#contact input[type=email],
+#main section#contact input[type=password],
+#main section#contact textarea {
+  color: black;
+  font-weight: 500;
+}
+#main section#contact input[type=text]::-moz-placeholder, #main section#contact input[type=email]::-moz-placeholder, #main section#contact input[type=password]::-moz-placeholder, #main section#contact textarea::-moz-placeholder {
+  color: gray;
+  opacity: 0.7;
+}
+#main section#contact input[type=text]::placeholder,
+#main section#contact input[type=email]::placeholder,
+#main section#contact input[type=password]::placeholder,
+#main section#contact textarea::placeholder {
+  color: gray;
+  opacity: 0.7;
+}
+#main section#contact input[type=text]:focus,
+#main section#contact input[type=email]:focus,
+#main section#contact input[type=password]:focus,
+#main section#contact textarea:focus {
+  color: black;
+  border-color: #E27689;
+}
+#main section#contact input[type=submit] {
+  background-color: #E27689;
+  color: black !important;
+  font-weight: 700;
+}
+
+.colourful-rainbow-effect {
+  background-image: linear-gradient(to right, #8B5CF6, #EC4899, #F43F5E, #F59E0B, #10B981);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite alternate;
+  font-weight: 700;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: inline-block;
+}
+.colourful-rainbow-effect::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(236, 72, 153, 0.6), transparent);
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.prevent-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -1748,7 +1963,7 @@ button:active,
 }
 #main > section.one {
   background-color: #81918E;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.webp");
 }
 #main > section.two {
   background-color: #f5fafa;

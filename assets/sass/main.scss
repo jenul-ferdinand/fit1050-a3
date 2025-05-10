@@ -1,3 +1,4 @@
+// Default imports
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -6,6 +7,354 @@
 @import 'libs/html-grid';
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+// New montserrat font import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// ! ===========================================================================|
+// ! STYLING OVERRIDES FOR SIDEBAR
+// ! ===========================================================================|
+
+#header {
+	background: black !important;
+	font-family: 'Montserrat', sans-serif !important;
+
+	// Remove pattern overlay
+	background-image: none !important;
+	// Removes the right edge shadow
+	box-shadow: none !important;
+
+	// Logo area 
+	#logo {
+		// Avatar image
+		.image.avatar {
+			width: 48px !important;
+			height: 48px !important;
+
+			img {
+				width: 48px !important;
+				height: 48px !important;
+				border-radius: 50% !important;
+			}
+		}
+
+		// Name heading (Jenul Ferdinand)
+		h1 {
+			font-size: 1.5em !important;
+			text-align: left !important;
+			font-weight: 600;
+			letter-spacing: -0.04em;
+		}
+
+		// Subheading (Software Engineer)
+		p {
+			font-size: 0.8em !important;
+			text-align: left !important;
+			color: rgb(173, 173, 173) !important;
+			font-weight: 600;
+		}
+	}
+
+	// Navigations
+	#nav {
+		ul {
+			li {
+				a {
+					font-weight: 600;
+
+					// Colour of tthe text (not selected)
+					color: white !important;
+
+					// Color of the icon (not selected)
+					span {
+						&:before {
+							color: white !important;
+						}
+					}
+
+					&.active {
+						// Color of the text (selected)
+						color: #e27689 !important;
+
+						// Colour of the icon (selected)
+						span:before {
+							color: #e27689 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Navigation icons
+	#icons {
+
+	}
+}
+
+
+
+
+// ! ===========================================================================|
+// ! STYLING OVERRIDES FOR MAIN SECTIONS
+// ! ===========================================================================|
+
+// ? ===========================================================================|
+// ? Intro section 
+// ? ===========================================================================|
+
+// * Top section splash text header override with Montserrat bold font and shadow
+#main section#top {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+
+	// The main title
+	h2, strong {
+		font-weight: 700;
+		color: white;
+		text-shadow: 
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            0 8px 16px rgba(0, 0, 0, 0.1);
+        letter-spacing: -0.02em;
+	}
+
+	// Subheading
+	p {
+		font-weight: 500;
+		color: white;
+	}
+
+	// Button that scrolls to portfolio
+	.button {
+		background-color: white;
+		color: black !important;
+		font-weight: 500;
+	}
+}
+
+
+
+// ? ===========================================================================|
+// ? Portfolio section
+// ? ===========================================================================|
+
+// * Portfolio section overrides
+#main section#portfolio {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+
+	// The main title
+	h2, strong {
+		font-weight: 700;
+		color: black;
+		letter-spacing: -0.02em;
+	}
+
+	// Descriptions
+	p { 
+		font-weight: 500;
+		color: black;
+	}
+}
+
+// * Portfolio section stacked cards
+.stacked-cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+	
+	.item {
+		width: 100%;
+		max-width: 800px; 
+		margin: 0;
+		
+		.image.fit {
+			overflow: hidden;
+			border-radius: 0.5em;
+			
+			img {
+				transition: transform 0.3s ease;
+			}
+			
+			&:hover img {
+				transform: scale(1.05);
+			}
+		}
+		
+		header {
+			padding: 1.5em;
+			text-align: center;
+		}
+
+		font-family: 'Montserrat', sans-serif;
+
+		.project-card-header {
+			font-weight: 700;
+			font-size: 1.5em;
+			color: black;
+			letter-spacing: -0.02em;
+		}
+
+		.project-card-description {
+			font-weight: 500;
+			color: black;
+		}
+	}
+}
+
+
+
+// ? ===========================================================================|
+// ? About section
+// ? ===========================================================================|
+
+// * About section overrides
+#main section#about {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+
+	// The main title
+	h2, strong {
+		font-weight: 700;
+		color: black;
+		letter-spacing: -0.02em;
+	}
+
+	// Image
+	.image.featured {
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	}
+
+	// Descriptions
+	p { 
+		font-weight: 500;
+		color: black;
+	}
+}
+
+
+
+// ? ===========================================================================|
+// ? Contact section
+// ? ===========================================================================|
+
+#main section#contact {
+	font-family: 'Montserrat', sans-serif;
+
+	// Title
+	h2, strong {
+		text-align: left;
+		font-weight: 700;
+		color: black;
+		letter-spacing: -0.02em;
+	}
+
+	// Description
+	p { 
+		text-align: left;
+		font-weight: 500;
+		color: black;
+	}
+
+	// Form fields
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea {
+		color: black;
+		font-weight: 500;
+
+		// Placeholder text in input fields
+		&::placeholder {
+			color: gray;
+			opacity: 0.7;
+		}
+
+		// Focused state of input fields
+		&:focus {
+			color: black;
+			border-color: #E27689;
+		}
+	}
+
+	// Submission button
+	input[type="submit"] {
+		background-color: #E27689;
+		color: black !important;
+		font-weight: 700;
+	}
+}
+
+
+// ! ===========================================================================|
+// ! NEW FONT/TEXT SELECTORS/EFFECTS
+// ! ===========================================================================|
+
+// * Colourful shifting rainbow effect for text
+.colourful-rainbow-effect {
+	background-image: linear-gradient(
+		to right,
+		#8B5CF6, // Violet
+		#EC4899, // Pink
+		#F43F5E, // Rose
+		#F59E0B, // Amber
+		#10B981, // Emerald
+	);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient-shift 4s ease-in-out infinite alternate;
+	font-weight: 700;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-image: linear-gradient(
+		to right,
+		transparent,
+		rgba(236, 72, 153, 0.6),
+		transparent
+		);
+	}
+}
+
+@keyframes gradient-shift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+// * Prevent selection of text
+.prevent-select {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+
+
+// ? ===========================================================================|
+// ? ORIGINAL STYLING
+// ? ===========================================================================|
 
 /*
 	Prologue by HTML5 UP
@@ -750,7 +1099,7 @@ button,
 
 		&.one {
 			background-color: #81918E;
-			background-image: url('../../images/banner.jpg');
+			background-image: url('../../images/banner.webp');
 		}
 
 		&.two {

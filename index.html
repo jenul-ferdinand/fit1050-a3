@@ -16,22 +16,23 @@
 
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Jenul Ferdinand - Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Sidebar -->
-		<div id="header">
+		<div id="header" class="prevent-select">
 
 			<div class="top">
 
 				<!-- * Logo -->
 				<div id="logo">
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="title">Jenul Ferdinad</h1>
+					<!-- <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span> -->
+					<h1 id="title">Jenul Ferdinand</h1>
 					<p>Software Engineer</p>
 				</div>
 
@@ -65,14 +66,12 @@
 		<div id="main">
 
 			<!-- ! Intro -->
-			<section id="top" class="one dark cover">
+			<section id="top" class="one dark cover prevent-select">
 				<div class="container">
 
 					<header>
-						<h2 class="alt">I'm <strong>Jenul Ferdinand</strong>, a software engineer<br />
-						Studying Computer Science at Monash University.</h2>
-						<p>Ligula scelerisque justo sem accumsan diam quis<br />
-						vitae natoque dictum sollicitudin elementum.</p>
+						<h2 class="montserrat-font-bold">I'm Jenul Ferdinand,<br/> <span class="colourful-rainbow-effect">I'm a software engineer</span></h2>
+						<p>Studying Computer Science at Monash University.</p>
 					</header>
 
 					<footer>
@@ -83,62 +82,74 @@
 			</section>
 
 			<!-- ! Portfolio -->
-			<section id="portfolio" class="two">
+			<section id="portfolio" class="two prevent-select">
 				<div class="container">
-
+					<!-- Header -->
 					<header>
-						<h2>Portfolio</h2>
+						<h2>Projects</h2>
 					</header>
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-					fusce hendrerit lacus ridiculus.</p>
+					<!-- Description -->
+					<p>These are some projects that I have worked on!</p>
 
-					<div class="row">
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								<header>
-									<h3>Ipsum Feugiat</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-								<header>
-									<h3>Rhoncus Semper</h3>
-								</header>
-							</article>
-						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-								<header>
-									<h3>Magna Nullam</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-								<header>
-									<h3>Natoque Vitae</h3>
-								</header>
-							</article>
-						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-								<header>
-									<h3>Dolor Penatibus</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-								<header>
-									<h3>Orci Convallis</h3>
-								</header>
-							</article>
-						</div>
-					</div>
+					<!-- Stacked project cards -->
+					<div class="stacked-cards">
+						<!-- MonSTAR project -->
+						<article class="item">
+							<a href="#" class="image fit">
+								<img src="images/monstar-homepage.png" alt="" />
+							</a>
+							<header>
+								<h1 class="project-card-header">
+									MonSTAR
+								</h1>
+								<span class="project-card-description">
+									A unit reviewing platform made for Monash
+									University students.
+								</span>
+								<!-- TODO: Add made with : [programming language icons] -->
+							</header>
+						</article>
+						<!-- MonArc project -->
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/monarc-homepage.png" alt="" /></a>
+							<header>
+								<h1 class="project-card-header">
+									MonArc
+								</h1>
+								<span class="project-card-description">
+									A new course planner for Monash University 
+									students. (Still in development)
+								</span>
+							</header>
+						</article>
+						<!-- Solv project -->
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/lockdin-cover.jpg" alt="" /></a>
+							<header>
+								<h1 class="project-card-header">
+									LockdIn
+								</h1>
+								<span class="project-card-description">
+									A productivity chrome extension catered for 
+									Monash University students. Made in 48 hours
+									during the UNIHACK 2024 Hackathon.
+								</span>
+							</header>
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img src="images/solv-showcase.gif" alt="" /></a>
+							<header>
+								<h1 class="project-card-header">
+									Solv
+								</h1>
+								<span class="project-card-description">
+									A app for kids to get better at math. Made in
+									high school.
+								</span>
+							</header>
+						</article>
+					  </div>
 
 				</div>
 			</section>
@@ -151,14 +162,15 @@
 						<h2>About Me</h2>
 					</header>
 
-					<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+					<a href="#" class="image featured"><img src="images/about.jpg" alt="" /></a>
 
-					<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-					ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-					laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-					parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-					dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-					ornare iaculis.</p>
+					<p>
+						Hi! I'm someone who loves working at the sweet spot where creativity meets precision. I'm naturally curious—always tinkering, exploring, and finding joy in transforming complex problems into simple, intuitive experiences. I believe great software isn't just about functionality; it's about making people's lives easier and bringing a bit of delight to their day.
+						<br/><br/>
+						Collaboration is at the heart of how I work. I thrive in teams where ideas flow freely and diverse perspectives come together. Whether I'm sketching out big-picture designs or diving deep into the details of the code, my goal remains the same: craft solutions that feel seamless and effortless.
+						<br/><br/>
+						I'm always excited to learn new technologies, experiment with fresh ideas, and continually refine my approach. For me, it's the small details, the thoughtful interactions, and the continuous iteration that truly make software special.
+					</p>
 
 				</div>
 			</section>
@@ -169,20 +181,20 @@
 
 					<!-- Header -->
 					<header>
-						<h2>Contact</h2>
+						<h2>Contact Me</h2>
 					</header>
 					
 					<!-- Description -->
-					<p>Elementum sem parturient nulla quam placerat viverra
-					mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-					donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-					orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+					<p>
+						Feel free to reach out to me via email, I am always open to new opportunities and collaborations.
+						Use the form below to send me a message or connect with me on social media.
+					</p>
 						
 					<!-- Form -->
 					<form method="post" action="#">
 						<div class="row">
-							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Enter your name" /></div>
-							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Enter your email" /></div>
+							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Your name" /></div>
+							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Your email" /></div>
 							<div class="col-12">
 								<textarea name="message" placeholder="Give me a message! 🙂"></textarea>
 							</div>
@@ -202,7 +214,7 @@
 
 			<!-- Copyright -->
 			<ul class="copyright">
-				<li>&copy; Jenul Ferdinand. All rights reserved.</li><li>Redesigned by: <a href="http://html5up.net">Jenul Ferdinand</a></li>
+				<li>&copy; HTML5 UP. All rights reserved.</li><li>Redesigned by: <a href="http://html5up.net">Jenul Ferdinand</a></li>
 			</ul>
 
 		</div>

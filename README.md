@@ -1,3 +1,13 @@
+# Redesigned Portfolio based on Prologue (HTML5 UP)
+> By Jenul Ferdinand
+
+This is a personal portfolio that showcases my skills, passions and projects.
+
+**Check it out here at: somewebsite.com**
+
+
+### Original README.txt
+```
 Prologue by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -38,3 +48,4 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+```
