@@ -1,6 +1,10 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 #header {
   background: black !important;
   font-family: "Montserrat", sans-serif !important;
@@ -51,6 +55,14 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.02em;
 }
+#main section#top header {
+  margin-bottom: 0.5em !important;
+}
+#main section#top .google-reviews {
+  width: 150px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 #main section#top p {
   font-weight: 500;
   color: white;
@@ -59,57 +71,18 @@
   background-color: white;
   color: black !important;
   font-weight: 500;
+  border-radius: 3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-#main section#portfolio {
-  text-align: left;
-  font-family: "Montserrat", sans-serif;
+#main section#top .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-#main section#portfolio h2, #main section#portfolio strong {
-  font-weight: 700;
-  color: black;
-  letter-spacing: -0.02em;
+#main section#top .button:hover i {
+  transform: translateY(-2px);
 }
-#main section#portfolio p {
-  font-weight: 500;
-  color: black;
-}
-
-.stacked-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-}
-.stacked-cards .item {
-  width: 100%;
-  max-width: 800px;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-.stacked-cards .item .image.fit {
-  overflow: hidden;
-  border-radius: 0.5em;
-}
-.stacked-cards .item .image.fit img {
+#main section#top .button i {
   transition: transform 0.3s ease;
-}
-.stacked-cards .item .image.fit:hover img {
-  transform: scale(1.05);
-}
-.stacked-cards .item header {
-  padding: 1.5em;
-  text-align: center;
-}
-.stacked-cards .item .project-card-header {
-  font-weight: 700;
-  font-size: 1.5em;
-  color: black;
-  letter-spacing: -0.02em;
-}
-.stacked-cards .item .project-card-description {
-  font-weight: 500;
-  color: black;
 }
 
 #main section#about {
@@ -121,14 +94,46 @@
   color: black;
   letter-spacing: -0.02em;
 }
+#main section#about .video {
+  border-radius: 16px;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 1rem;
+}
+#main section#about p {
+  font-weight: 500;
+  color: black;
+}
 #main section#about .image.featured {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-#main section#about p {
-  font-weight: 500;
-  color: black;
+#main section#about .image.featured img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 60%;
+     object-position: 0% 60%;
+}
+
+.floating-character {
+  position: absolute;
+  z-index: 100;
+  right: -370px;
+  top: 75%;
+  transform: translateY(-50%) rotate(-45deg);
+  pointer-events: none;
+}
+.floating-character img {
+  max-height: 600px;
+  width: auto;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+@media (max-width: 1000px) {
+  .floating-character {
+    display: none;
+  }
 }
 
 #main section#contact {
@@ -144,6 +149,56 @@
   text-align: left;
   font-weight: 500;
   color: black;
+}
+#main section#contact .schools-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: 2em 0 3em;
+}
+#main section#contact .schools-row a.image.fit {
+  max-width: 80px;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+#main section#contact .schools-row a.image.fit:hover {
+  transform: translateY(-5px);
+}
+#main section#contact .schools-row a.image.fit img {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#main section#contact .schools-row a.image.fit:not(:first-child) {
+  margin-left: 20px;
+}
+#main section#contact .schools-row .more-schools-chip {
+  background-color: black;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  align-self: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+#main section#contact .schools-row .more-schools-chip:hover {
+  transform: scale(1.05);
+}
+#main section#contact form {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#main section#contact form .row {
+  justify-content: center;
+}
+#main section#contact form .row .col-8 {
+  text-align: center;
+  margin: 0 auto;
 }
 #main section#contact input[type=text],
 #main section#contact input[type=email],
@@ -170,10 +225,170 @@
   color: black;
   border-color: #E27689;
 }
-#main section#contact input[type=submit] {
-  background-color: #E27689;
-  color: black !important;
+#main section#contact .button {
+  width: 271px;
+  height: 70px;
+  background-color: black !important;
+  color: white !important;
+  font-weight: 500;
+  border-radius: 3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#main section#contact .button i {
+  font-size: 1.5em;
+}
+#main section#contact .button span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+#main section#contact .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#main section#contact .button:hover i {
+  transform: translateY(-2px);
+}
+#main section#contact .button i {
+  transition: transform 0.3s ease;
+}
+#main section#contact button[disabled] {
+  background-color: rgb(41, 41, 41) !important;
+  color: gray !important;
+  box-shadow: none;
+  opacity: 0.7 !important;
+  transition: none !important;
+  cursor: not-allowed !important;
+}
+#main section#contact button[disabled]:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+#main section#portfolio {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+#main section#portfolio h2, #main section#portfolio strong {
   font-weight: 700;
+  color: black;
+  letter-spacing: -0.02em;
+}
+#main section#portfolio p {
+  font-weight: 500;
+  color: black;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin: 2em 0;
+}
+@media (max-width: 980px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.pricing-card {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.pricing-card.featured {
+  background-color: #000;
+  color: white;
+  transform: scale(1.05);
+  z-index: 1;
+}
+.pricing-card.featured h3, .pricing-card.featured .price, .pricing-card.featured .features li {
+  color: white;
+}
+.pricing-card.featured .features li i {
+  color: #E27689;
+}
+.pricing-card.featured:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+.pricing-card .card-content {
+  padding: 1em;
+  flex-grow: 1;
+}
+.pricing-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.pricing-card .price {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.pricing-card .price .amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #E27689;
+}
+.pricing-card .price .period {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #888;
+}
+.featured .pricing-card .price .period {
+  color: #ddd;
+}
+.pricing-card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5em;
+}
+.pricing-card .features li {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+.pricing-card .features li i {
+  color: #E27689;
+  margin-right: 0.8em;
+  font-size: 0.8em;
+  padding-top: 0.4em;
+}
+.pricing-card .pricing-button {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 1em;
+  text-align: center;
+  font-weight: 600;
+  background-color: white;
+  color: black !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.featured .pricing-card .pricing-button {
+  background-color: white;
+  color: black !important;
+}
+.pricing-card .pricing-button:hover {
+  background-color: #E27689;
+  color: white !important;
 }
 
 .colourful-rainbow-effect {

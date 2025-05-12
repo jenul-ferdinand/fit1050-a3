@@ -9,6 +9,8 @@
 	Altered by Jenul Ferdinand
 
 	Notes for marker:
+	- The new JS feature is in the "assets/js/myfeature.js" file. What it does
+	is validate the form, in the contact section.
 	- You can use "Better Comments" extension in VSCode to make comments more 
 	readable. This is why there are some comments with "!" and "*" in them.
 -->
@@ -16,7 +18,7 @@
 
 <html>
 	<head>
-		<title>Jenul Ferdinand - Portfolio</title>
+		<title>MiniDevs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -32,17 +34,17 @@
 				<!-- * Logo -->
 				<div id="logo">
 					<!-- <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span> -->
-					<h1 id="title">Jenul Ferdinand</h1>
-					<p>Software Engineer</p>
+					<h1 id="title">MiniDevs</h1>
+					<p>Melbourne, Australia</p>
 				</div>
 
 				<!-- * Nav -->
 				<nav id="nav">
 					<ul>
 						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
 						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-tag">Pricing</span></a></li>
 					</ul>
 				</nav>
 
@@ -65,115 +67,71 @@
 		<!-- Main -->
 		<div id="main">
 
+
+
 			<!-- ! Intro -->
 			<section id="top" class="one dark cover prevent-select">
 				<div class="container">
-
+					<!-- Header line -->
 					<header>
-						<h2 class="montserrat-font-bold">I'm Jenul Ferdinand,<br/> <span class="colourful-rainbow-effect">I'm a software engineer</span></h2>
-						<p>Studying Computer Science at Monash University.</p>
+						<h2 class="montserrat-font-bold">This is MiniDevs,<br/> <span class="colourful-rainbow-effect">We empower young coders.</span></h2>
+						<p>High-quality coding lessons for<br/>primary school level students.</p>
 					</header>
 
+					<!-- Image of google ratings -->
+					<img src="images/google-reviews.png" alt="Google Reviews" class="google-reviews" />
+
+					<!-- Button to go to next section -->
 					<footer>
-						<a href="#portfolio" class="button scrolly">Learn more about me!</a>
+						<a href="#about" class="button scrolly">
+							<i class="fas fa-rocket" style="margin-right: 8px;"></i>
+							Learn more!
+						</a>
 					</footer>
 
 				</div>
 			</section>
 
-			<!-- ! Portfolio -->
-			<section id="portfolio" class="two prevent-select">
-				<div class="container">
-					<!-- Header -->
-					<header>
-						<h2>Projects</h2>
-					</header>
 
-					<!-- Description -->
-					<p>These are some projects that I have worked on!</p>
 
-					<!-- Stacked project cards -->
-					<div class="stacked-cards">
-						<!-- MonSTAR project -->
-						<article class="item">
-							<a href="#" class="image fit">
-								<img src="images/monstar-homepage.png" alt="" />
-							</a>
-							<header>
-								<h1 class="project-card-header">
-									MonSTAR
-								</h1>
-								<span class="project-card-description">
-									A unit reviewing platform made for Monash
-									University students.
-								</span>
-								<!-- TODO: Add made with : [programming language icons] -->
-							</header>
-						</article>
-						<!-- MonArc project -->
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/monarc-homepage.png" alt="" /></a>
-							<header>
-								<h1 class="project-card-header">
-									MonArc
-								</h1>
-								<span class="project-card-description">
-									A new course planner for Monash University 
-									students. (Still in development)
-								</span>
-							</header>
-						</article>
-						<!-- Solv project -->
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/lockdin-cover.jpg" alt="" /></a>
-							<header>
-								<h1 class="project-card-header">
-									LockdIn
-								</h1>
-								<span class="project-card-description">
-									A productivity chrome extension catered for 
-									Monash University students. Made in 48 hours
-									during the UNIHACK 2024 Hackathon.
-								</span>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/solv-showcase.gif" alt="" /></a>
-							<header>
-								<h1 class="project-card-header">
-									Solv
-								</h1>
-								<span class="project-card-description">
-									A app for kids to get better at math. Made in
-									high school.
-								</span>
-							</header>
-						</article>
-					  </div>
+			<!-- Floating character (absolutely positioned) -->
+			<div class="floating-character">
+				<img src="images/cartoon-man.png" alt="Cartoon character" />
+			</div>
 
-				</div>
-			</section>
 
-			<!-- ! About Me -->
+
+			<!-- ! About Us -->
 			<section id="about" class="three">
 				<div class="container">
 
 					<header>
-						<h2>About Me</h2>
+						<h2>"The best lessons ever!"</h2>
 					</header>
 
-					<a href="#" class="image featured"><img src="images/about.jpg" alt="" /></a>
-
+					<!-- Description 1 -->
 					<p>
-						Hi! I'm someone who loves working at the sweet spot where creativity meets precision. I'm naturally curious—always tinkering, exploring, and finding joy in transforming complex problems into simple, intuitive experiences. I believe great software isn't just about functionality; it's about making people's lives easier and bringing a bit of delight to their day.
-						<br/><br/>
-						Collaboration is at the heart of how I work. I thrive in teams where ideas flow freely and diverse perspectives come together. Whether I'm sketching out big-picture designs or diving deep into the details of the code, my goal remains the same: craft solutions that feel seamless and effortless.
-						<br/><br/>
-						I'm always excited to learn new technologies, experiment with fresh ideas, and continually refine my approach. For me, it's the small details, the thoughtful interactions, and the continuous iteration that truly make software special.
+						MiniDevs is the home of fun school and holiday programs 
+						for kids in grade 3-6. We equip them with skills to be 
+						the creators of the future!
 					</p>
 
+					<!-- Video -->
+					<iframe class="video" alt="Video of our classroom activities" aria-label="Video of our classroom activities" src="https://www.youtube.com/embed/ClQ6c7Lukoo?si=jXW3oTtB6a-AwMPa&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<!-- Description 2  -->
+					<p>
+						Our students love their coding lessons! We make learning fun and engaging!
+					</p>
+
+					<!-- Kid coding image -->
+					<a href="#" class="image featured" aria-label="Image of kids coding">
+						<img src="images/kid-coding.jpg" alt="Image of kids coding" />
+					</a>
 				</div>
 			</section>
+
+
 
 			<!-- ! Contact -->
 			<section id="contact" class="four">
@@ -181,25 +139,93 @@
 
 					<!-- Header -->
 					<header>
-						<h2>Contact Me</h2>
+						<h2>Bring MiniDevs to Your School!</h2>
 					</header>
 					
 					<!-- Description -->
 					<p>
-						Feel free to reach out to me via email, I am always open to new opportunities and collaborations.
-						Use the form below to send me a message or connect with me on social media.
+						Want to ignite creativity and problem-solving skills in your students? 
+						Our team of experienced educators brings fun, engaging coding lessons 
+						to your classroom. Fill out this form to schedule a free consultation!
 					</p>
+
+					<!-- Schools we operate at (stacked images right) -->
+					<div class="schools-row">
+						<!-- Mulgrave PS -->
+						<a href="#" class="image fit" aria-label="Mulgrave Primary School">
+							<img 
+								loading="lazy"
+								src="images/schools/mulgrave-ps.png" 
+								alt="Mulgrave Primary School logo" 
+							/>
+						</a>
+						<!-- Mount Waverley Heights PS -->
+						<a href="#" class="image fit" aria-label="Mount Waverley Heights Primary School">
+							<img 
+								loading="lazy"
+								src="images/schools/mount-waverley-heights.png" 
+								alt="Mount Waverley Heights Primary School logo" 
+							/>
+						</a>
+						<!-- McKinnon PS -->
+						<a href="#" class="image fit" aria-label="McKinnon Primary School">
+							<img 
+								loading="lazy"
+								src="images/schools/mckinnon-ps.png" 
+								alt="McKinnon Primary School logo" 
+							/>
+						</a>
+						<!-- Holy Family School -->
+						<a href="#" class="image fit" aria-label="Holy Family School">
+							<img 
+								loading="lazy"
+								src="images/schools/holy-family-school.png" 
+								alt="Holy Family School logo" 
+							/>
+						</a>
+						<!-- Holy Name PS -->
+						<a href="#" class="image fit" aria-label="Holy Name Primary School">
+							<img 
+								loading="lazy"
+								src="images/schools/holy-name-ps.png" 
+								alt="Holy Name Primary School logo"
+							/>
+						</a>
+						<!-- "+43 more" chip -->
+						<span class="more-schools-chip" aria-label="Plus 43 more partner schools">
+							+43 more
+						</span>
+					</div>
 						
 					<!-- Form -->
-					<form method="post" action="#">
+					<form id="contact-form" method="post" action="#">
 						<div class="row">
-							<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Your name" /></div>
-							<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Your email" /></div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Give me a message! 🙂"></textarea>
+							<!-- Name input -->
+							<div class="col-6 col-12-mobile">
+								<input type="text" name="name" id="contact-name" placeholder="Your name" />
 							</div>
+							<!-- School name input -->
+							<div class="col-6 col-12-mobile">
+								<input type="text" name="school" id="contact-school" placeholder="School name" />
+							</div>
+							<!-- Email input -->
+							<div class="col-6 col-12-mobile">
+								<input type="text" name="email" id="contact-email" placeholder="Your email" />
+							</div>
+							<!-- Message texarea -->
 							<div class="col-12">
-								<input type="submit" value="Send Message" />
+								<textarea name="message" id="contact-message" placeholder="Give us a message! 🙂"></textarea>
+							</div>
+							<!-- Submit button -->
+							<div class="col-12">
+								<button 
+									type="button"
+									id="send-message-button"
+									class="button"
+								>
+									<i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+									<span>Send Message</span>
+								</button>
 							</div>
 						</div>
 					</form>
@@ -207,7 +233,87 @@
 				</div>
 			</section>
 
+
+
+			<!-- ! Pricing and Programs -->
+			<section id="portfolio" class="two prevent-select">
+				<div class="container">
+					<!-- Header -->
+					<header>
+						<h2>Pricing & Programs</h2>
+					</header>
+
+					<!-- Description -->
+					<p>Choose the program that's right for your school or child.</p>
+
+					<!-- Pricing cards -->
+					<div class="pricing-cards">
+						<!-- Holiday program card -->
+						<div class="pricing-card">
+							<div class="card-content">
+								<h3>Holiday</h3>
+								<div class="price">
+									<span class="amount">$450</span>
+								</div>
+								<ul class="features">
+									<li><i class="fas fa-check"></i>Sessions run everyday</li>
+									<li><i class="fas fa-check"></i>Term break (2 weeks)</li>
+									<li><i class="fas fa-check"></i>Online on Zoom</li>
+									<li><i class="fas fa-check"></i>Morning only (11am)</li>
+								</ul>
+							</div>
+							<!-- Purchase package button -->
+							<a href="#" class="button pricing-button">
+								Purchase Package
+							</a>
+						</div>
+
+						<!-- Term program card (Featured) -->
+						<div class="pricing-card featured">
+							<div class="card-content">
+								<h3>Term Program</h3>
+								<div class="price">
+									<span class="amount">$500</span>
+									<span class="period">/Term</span>
+								</div>
+								<ul class="features">
+									<li><i class="fas fa-check"></i>Once a week session</li>
+									<li><i class="fas fa-check"></i>1 Hour session</li>
+									<li><i class="fas fa-check"></i>Morning, lunch, or Afternoon</li>
+								</ul>
+							</div>
+							<!-- Purchase package button -->
+							<a href="#" class="button pricing-button">
+								Purchase Package
+							</a>
+						</div>
+
+						<!-- Holiday program card -->
+						<div class="pricing-card">
+							<div class="card-content">
+								<h3>Online Class</h3>
+								<div class="price">
+									<span class="amount">$800</span>
+									<span class="period">/Term</span>
+								</div>
+								<ul class="features">
+									<li><i class="fas fa-check"></i>Once a week session</li>
+									<li><i class="fas fa-check"></i>2 hour session</li>
+									<li><i class="fas fa-check"></i>Morning, Lunch, or Afternoon</li>
+									<li><i class="fas fa-check"></i>Hosted on Zoom</li>
+								</ul>
+							</div>
+							<!-- Purchase package button -->
+							<a href="#" class="button pricing-button">
+								Purchase Package
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
+
+
 
 		<!-- Footer -->
 		<div id="footer">
@@ -219,6 +325,8 @@
 
 		</div>
 
+
+
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -228,5 +336,6 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<script src="assets/js/myfeature.js"></script> <!-- New JS Feature here -->
 	</body>
 </html>

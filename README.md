@@ -1,7 +1,7 @@
 # Redesigned Portfolio based on Prologue (HTML5 UP)
 > By Jenul Ferdinand
 
-This is a personal portfolio that showcases my skills, passions and projects.
+A webpage for MiniDevs, redesigned from Prologue template by HTML5 UP.
 
 **Check it out here at: somewebsite.com**
 
