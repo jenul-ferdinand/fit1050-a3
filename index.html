@@ -9,10 +9,22 @@
 	Altered by Jenul Ferdinand
 
 	Notes for marker:
+	Hi Marker,
+
 	- The new JS feature is in the "assets/js/myfeature.js" file. What it does
-	is validate the form, in the contact section.
+	is validate the form, in the contact section. There's also some cool
+	security features for it, like preventing XSS attacks and SQL injection,
+	but this is client-side validation, so it won't be as effective as server-side.
+	Still good to have though.
+
 	- You can use "Better Comments" extension in VSCode to make comments more 
 	readable. This is why there are some comments with "!" and "*" in them.
+
+	- Styling edits have been made to the SCSS file "assets/scss/main.scss",
+	the main edits are in the top section of the file. There were some minor changes
+	made to the other sections, but they are not as important.
+
+	Thank you!
 -->
 
 
@@ -26,7 +38,7 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Sidebar -->
+		<!-- SidebaA	r -->
 		<div id="header" class="prevent-select">
 
 			<div class="top">
@@ -34,17 +46,17 @@
 				<!-- * Logo -->
 				<div id="logo">
 					<!-- <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span> -->
-					<h1 id="title">MiniDevs</h1>
-					<p>Melbourne, Australia</p>
+					<h1 id="title" aria-label="MiniDevs sidebar header">MiniDevs</h1>
+					<p aria-label="Melbourne, Australia">Melbourne, Australia</p>
 				</div>
 
 				<!-- * Nav -->
-				<nav id="nav">
+				<nav id="nav" aria-label="Main navigation">
 					<ul>
-						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
-						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-tag">Pricing</span></a></li>
+						<li><a href="#top" aria-label="intro section sidebar button" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+						<li><a href="#about" aria-label="about section sidebar button" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
+						<li><a href="#contact" aria-label="contact section sidebar button" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+						<li><a href="#portfolio" aria-label="pricing section sidebar button" id="portfolio-link"><span class="icon solid fa-tag">Pricing</span></a></li>
 					</ul>
 				</nav>
 
@@ -53,18 +65,15 @@
 			<div class="bottom">
 
 				<!-- * Social Icons -->
-				<ul class="icons">
-					<li><a target="_blank" href="https://www.linkedin.com/in/jenul-ferdinand" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/jenul_ferdinand" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a target="_blank" href="https://github.com/jenul-ferdinand" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a target="_blank" href="mailto:jenul15ferdinand@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<ul class="icons" aria-label="Social media links">
+					<li><a target="_blank" aria-label="send email icon button" href="mailto:jenul15ferdinand@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 
 			</div>
 
 		</div>
 
-		<!-- Main -->
+		<!-- Main Page Content -->
 		<div id="main">
 
 
@@ -74,16 +83,16 @@
 				<div class="container">
 					<!-- Header line -->
 					<header>
-						<h2 class="montserrat-font-bold">This is MiniDevs,<br/> <span class="colourful-rainbow-effect">We empower young coders.</span></h2>
-						<p>High-quality coding lessons for<br/>primary school level students.</p>
+						<h2 class="montserrat-font-bold prevent-select" aria-label="This is MiniDevs, We empower young coders.">This is MiniDevs,<br/> <span class="colourful-rainbow-effect">We empower young coders.</span></h2>
+						<p class="prevent-select" aria-label="High-quality coding lessons for primary school level students.">High-quality coding lessons for<br/>primary school level students.</p>
 					</header>
 
 					<!-- Image of google ratings -->
-					<img src="images/google-reviews.png" alt="Google Reviews" class="google-reviews" />
+					<img src="images/google-reviews.png" alt="Google Reviews" class="google-reviews" aria-label="5 star google reviews"/>
 
 					<!-- Button to go to next section -->
 					<footer>
-						<a href="#about" class="button scrolly">
+						<a href="#about" class="button scrolly" aria-label="Learn more about MiniDevs">
 							<i class="fas fa-rocket" style="margin-right: 8px;"></i>
 							Learn more!
 						</a>
@@ -94,9 +103,9 @@
 
 
 
-			<!-- Floating character (absolutely positioned) -->
+			<!-- ! Floating character (absolutely positioned) -->
 			<div class="floating-character">
-				<img src="images/cartoon-man.png" alt="Cartoon character" />
+				<img src="images/cartoon-man-25.gif" alt="Cartoon character" aria-label="Animated cartoon man waving" />
 			</div>
 
 
@@ -106,11 +115,11 @@
 				<div class="container">
 
 					<header>
-						<h2>"The best lessons ever!"</h2>
+						<h2 class="prevent-select" aria-label="Student testimonial: The best lessons ever!">"The best lessons ever!"</h2>
 					</header>
 
 					<!-- Description 1 -->
-					<p>
+					<p class="prevent-select">
 						MiniDevs is the home of fun school and holiday programs 
 						for kids in grade 3-6. We equip them with skills to be 
 						the creators of the future!
@@ -120,13 +129,13 @@
 					<iframe class="video" alt="Video of our classroom activities" aria-label="Video of our classroom activities" src="https://www.youtube.com/embed/ClQ6c7Lukoo?si=jXW3oTtB6a-AwMPa&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 					<!-- Description 2  -->
-					<p>
+					<p class="prevent-select">
 						Our students love their coding lessons! We make learning fun and engaging!
 					</p>
 
 					<!-- Kid coding image -->
 					<a href="#" class="image featured" aria-label="Image of kids coding">
-						<img src="images/kid-coding.jpg" alt="Image of kids coding" />
+						<img src="images/kid-coding.webp" alt="Image of kids coding" />
 					</a>
 				</div>
 			</section>
@@ -139,18 +148,18 @@
 
 					<!-- Header -->
 					<header>
-						<h2>Bring MiniDevs to Your School!</h2>
+						<h2 class="prevent-select" aria-label="Contact us to bring MiniDevs to your school">Bring MiniDevs to Your School!</h2>
 					</header>
 					
 					<!-- Description -->
-					<p>
+					<p class="prevent-select">
 						Want to ignite creativity and problem-solving skills in your students? 
 						Our team of experienced educators brings fun, engaging coding lessons 
 						to your classroom. Fill out this form to schedule a free consultation!
 					</p>
 
 					<!-- Schools we operate at (stacked images right) -->
-					<div class="schools-row">
+					<div class="schools-row" aria-label="List of our partner schools">
 						<!-- Mulgrave PS -->
 						<a href="#" class="image fit" aria-label="Mulgrave Primary School">
 							<img 
@@ -198,23 +207,23 @@
 					</div>
 						
 					<!-- Form -->
-					<form id="contact-form" method="post" action="#">
+					<form id="contact-form" method="post" action="#" aria-label="School partnership inquiry form">
 						<div class="row">
 							<!-- Name input -->
 							<div class="col-6 col-12-mobile">
-								<input type="text" name="name" id="contact-name" placeholder="Your name" />
+								<input type="text" name="name" id="contact-name" placeholder="Your name" aria-label="Your full name" />
 							</div>
 							<!-- School name input -->
 							<div class="col-6 col-12-mobile">
-								<input type="text" name="school" id="contact-school" placeholder="School name" />
+								<input type="text" name="school" id="contact-school" placeholder="School name" aria-label="Name of your school" />
 							</div>
 							<!-- Email input -->
 							<div class="col-6 col-12-mobile">
-								<input type="text" name="email" id="contact-email" placeholder="Your email" />
+								<input type="text" name="email" id="contact-email" placeholder="Your email" aria-label="Your email address" />
 							</div>
 							<!-- Message texarea -->
 							<div class="col-12">
-								<textarea name="message" id="contact-message" placeholder="Give us a message! 🙂"></textarea>
+								<textarea name="message" id="contact-message" placeholder="Give us a message! 🙂" aria-label="Your message or inquiry"></textarea>
 							</div>
 							<!-- Submit button -->
 							<div class="col-12">
@@ -222,6 +231,7 @@
 									type="button"
 									id="send-message-button"
 									class="button"
+									aria-label="Send inquiry message"
 								>
 									<i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
 									<span>Send Message</span>
@@ -240,18 +250,18 @@
 				<div class="container">
 					<!-- Header -->
 					<header>
-						<h2>Pricing & Programs</h2>
+						<h2 aria-label="MiniDevs Pricing and Programs">Pricing & Programs</h2>
 					</header>
 
 					<!-- Description -->
 					<p>Choose the program that's right for your school or child.</p>
 
 					<!-- Pricing cards -->
-					<div class="pricing-cards">
+					<div class="pricing-cards" aria-label="Program pricing options">
 						<!-- Holiday program card -->
 						<div class="pricing-card">
 							<div class="card-content">
-								<h3>Holiday</h3>
+								<h3 aria-label="Holiday Program">Holiday</h3>
 								<div class="price">
 									<span class="amount">$450</span>
 								</div>
@@ -263,7 +273,7 @@
 								</ul>
 							</div>
 							<!-- Purchase package button -->
-							<a href="#" class="button pricing-button">
+							<a href="#" class="button pricing-button" aria-label="Purchase Holiday Program">
 								Purchase Package
 							</a>
 						</div>
@@ -271,7 +281,7 @@
 						<!-- Term program card (Featured) -->
 						<div class="pricing-card featured">
 							<div class="card-content">
-								<h3>Term Program</h3>
+								<h3 aria-label="Term Program">Term Program</h3>
 								<div class="price">
 									<span class="amount">$500</span>
 									<span class="period">/Term</span>
@@ -283,7 +293,7 @@
 								</ul>
 							</div>
 							<!-- Purchase package button -->
-							<a href="#" class="button pricing-button">
+							<a href="#" class="button pricing-button" aria-label="Purchase Term Program">
 								Purchase Package
 							</a>
 						</div>
@@ -291,7 +301,7 @@
 						<!-- Holiday program card -->
 						<div class="pricing-card">
 							<div class="card-content">
-								<h3>Online Class</h3>
+								<h3 aria-label="Online Class Program">Online Class</h3>
 								<div class="price">
 									<span class="amount">$800</span>
 									<span class="period">/Term</span>
@@ -304,7 +314,7 @@
 								</ul>
 							</div>
 							<!-- Purchase package button -->
-							<a href="#" class="button pricing-button">
+							<a href="#" class="button pricing-button" aria-label="Purchase Online Class Program">
 								Purchase Package
 							</a>
 						</div>
@@ -319,7 +329,7 @@
 		<div id="footer">
 
 			<!-- Copyright -->
-			<ul class="copyright">
+			<ul class="copyright" aria-label="Copyright and credits">
 				<li>&copy; HTML5 UP. All rights reserved.</li><li>Redesigned by: <a href="http://html5up.net">Jenul Ferdinand</a></li>
 			</ul>
 
